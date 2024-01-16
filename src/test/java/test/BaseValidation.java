@@ -15,7 +15,8 @@ public class BaseValidation {
 	String url = "https://www.fb.com";
 	
 	public static WebDriver driver;
-			
+	
+	//this method is going to called before the test
 	@BeforeTest
 	public void beforeTest() {
 		//invoke the browser
@@ -25,6 +26,7 @@ public class BaseValidation {
 		driver.get(url);
 	}
 	
+	//this method will be called after the test
 	@AfterTest
 	public void afterTest() {
 		driver.quit();
