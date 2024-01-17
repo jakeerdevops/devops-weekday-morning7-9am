@@ -32,7 +32,7 @@ public class BaseValidation {
 		driver.quit();
 	}
 	
-	@Test
+	@Test(description = "Test case to validate the url")
 	public void urlValidation() {
 		String expectedResult = "https://www.facebook.com/";
 		String actualResult = driver.getCurrentUrl();
